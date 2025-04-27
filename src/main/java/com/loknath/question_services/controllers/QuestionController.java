@@ -20,7 +20,7 @@ import com.loknath.question_services.services.QuestionService;
 
 @RestController
 @RequestMapping("/question")
-@CrossOrigin(origins = "http://127.0.0.1:5500")
+@CrossOrigin(origins = "${frontend.url}")
 public class QuestionController {
 
     @Autowired

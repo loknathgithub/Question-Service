@@ -13,7 +13,7 @@ import java.util.Optional;
 
 @RestController
 @RequestMapping("/class")
-@CrossOrigin(origins = "http://127.0.0.1:5500")
+@CrossOrigin(origins = "${frontend.url}")
 public class QuizClassController {
     @Autowired
     private ClassRepository classRepository;
